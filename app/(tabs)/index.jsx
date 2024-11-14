@@ -1,10 +1,15 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
+
+
+const PlaceholderImage = require("../../assets/background-image.png");
 
 export default function Page() {
   return (
     <View className="flex-1 justify-center items-center bg-[#25292e]">
-      <Text className="font-bold text-4xl text-white">Hello World</Text>
+      <View className="flex-1">
+        <Image source={PlaceholderImage} className="w-[320px] h-[440px] rounded-2xl" />
+      </View>
       
     </View>
   );
