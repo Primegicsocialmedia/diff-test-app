@@ -26,6 +26,16 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["expo-router"]
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to let you share vehicle images."
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ]
   }
 }
